@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StaffRecordingSystem
+namespace RecordingSystem
 {
     public partial class PasswordForm : Form
     {
@@ -19,7 +19,7 @@ namespace StaffRecordingSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (usernameInput.Text == "knoxStaff" && passwordInput.Text == "knox2024")
+            if (usernameInput.Text == Properties.Resources.username && passwordInput.Text == Properties.Resources.password)
             {
                 new SelectMessage().Visible = true;
                 this.Visible = false;

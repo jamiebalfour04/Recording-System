@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualBasic;
-using StaffRecordingSystem.Model;
+using RecordingSystem.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
-namespace StaffRecordingSystem
+namespace RecordingSystem
 {
 
     public partial class SelectMessage : Form

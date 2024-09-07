@@ -2,9 +2,9 @@ using System.Security;
 using System.Security.Cryptography;
 using System.Text;
 using System.Xml.Serialization;
-using StaffRecordingSystem.Model;
+using RecordingSystem.Model;
 
-namespace StaffRecordingSystem
+namespace RecordingSystem
 {
     public partial class RecordSomething : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace StaffRecordingSystem
+﻿namespace RecordingSystem
 {
     partial class RecordSomething
     {

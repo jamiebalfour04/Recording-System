@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace StaffRecordingSystem.Model
+namespace RecordingSystem.Model
 {
     /*
 Copyright (c) 2010 <a href="http://www.gutgames.com">James Craig</a>

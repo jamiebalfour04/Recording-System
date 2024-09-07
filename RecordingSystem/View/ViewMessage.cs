@@ -9,9 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
-using StaffRecordingSystem.Model;
+using RecordingSystem.Model;
 
-namespace StaffRecordingSystem
+namespace RecordingSystem
 {
     public partial class ViewMessage : Form
     {

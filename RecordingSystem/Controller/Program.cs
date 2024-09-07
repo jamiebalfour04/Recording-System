@@ -1,4 +1,4 @@
-namespace StaffRecordingSystem.Model
+namespace RecordingSystem.Model
 {
     internal static class Program
     {

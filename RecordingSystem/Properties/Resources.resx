@@ -124,10 +124,16 @@
     <value>C:\Users\jamie\output</value>
     <comment>The path to store all details and information</comment>
   </data>
+  <data name="password" xml:space="preserve">
+    <value>mouse</value>
+  </data>
   <data name="reporterString" xml:space="preserve">
     <value>Teacher</value>
   </data>
   <data name="subjectString" xml:space="preserve">
     <value>Pupil</value>
+  </data>
+  <data name="username" xml:space="preserve">
+    <value>mickey</value>
   </data>
 </root>
