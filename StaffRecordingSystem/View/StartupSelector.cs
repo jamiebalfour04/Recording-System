@@ -28,5 +28,15 @@ namespace StaffRecordingSystem
             new PasswordForm().Visible = true;
             this.Visible = false;
         }
+
+        private void StartupSelector_Load(object sender, EventArgs e)
+        {
+            this.Text = Properties.Resources.applicationName;
+        }
+
+        private void StartupSelector_Closing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

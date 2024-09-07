@@ -34,8 +34,6 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             listView1 = new ListView();
             columnHeader3 = new ColumnHeader();
-            columnHeader1 = new ColumnHeader();
-            columnHeader2 = new ColumnHeader();
             checkForMessages = new System.Windows.Forms.Timer(components);
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -84,7 +82,7 @@
             // 
             // listView1
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader3, columnHeader1, columnHeader2 });
+            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader3 });
             listView1.Dock = DockStyle.Fill;
             listView1.Location = new Point(26, 63);
             listView1.Margin = new Padding(3, 4, 3, 4);
@@ -98,16 +96,6 @@
             // 
             columnHeader3.Text = "Date";
             columnHeader3.Width = 150;
-            // 
-            // columnHeader1
-            // 
-            columnHeader1.Text = "Pupil Name";
-            columnHeader1.Width = 170;
-            // 
-            // columnHeader2
-            // 
-            columnHeader2.Text = "Teacher Name";
-            columnHeader2.Width = 170;
             // 
             // checkForMessages
             // 
@@ -143,8 +131,6 @@
         private TableLayoutPanel tableLayoutPanel1;
         private ListView listView1;
         private ColumnHeader columnHeader3;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
         private System.Windows.Forms.Timer checkForMessages;
     }
 }

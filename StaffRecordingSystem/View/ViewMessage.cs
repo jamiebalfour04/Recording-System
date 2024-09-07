@@ -76,7 +76,8 @@ namespace StaffRecordingSystem
 
         private void ViewMessage_Load(object sender, EventArgs e)
         {
-
+            this.Text = Properties.Resources.applicationName + " :: View Message";
+            subjectLabel.Text = Properties.Resources.subjectString;
         }
     }
 }

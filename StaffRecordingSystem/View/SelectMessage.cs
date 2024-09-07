@@ -27,6 +27,17 @@ namespace StaffRecordingSystem
 
         private void SelectMessage_Load(object sender, EventArgs e)
         {
+            this.Text = Properties.Resources.applicationName + " :: Select Message";
+            ColumnHeader c = new ColumnHeader();
+            c.Text = Properties.Resources.subjectString;
+            c.Width = 170;
+            listView1.Columns.Add(c);
+
+            c = new ColumnHeader();
+            c.Text = Properties.Resources.reporterString;
+            c.Width = 170;
+            listView1.Columns.Add(c);
+
             loadMessages();            
         }
 

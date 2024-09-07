@@ -19,7 +19,7 @@ namespace StaffRecordingSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(usernameInput.Text == "knoxStaff" && passwordInput.Text == "knox2024")
+            if (usernameInput.Text == "knoxStaff" && passwordInput.Text == "knox2024")
             {
                 new SelectMessage().Visible = true;
                 this.Visible = false;
@@ -28,6 +28,11 @@ namespace StaffRecordingSystem
             {
                 MessageBox.Show("Incorrect login details. Please try again.", "Please try again", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void PasswordForm_Load(object sender, EventArgs e)
+        {
+            this.Text = Properties.Resources.applicationName + " :: Login";
         }
     }
 }

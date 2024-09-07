@@ -31,7 +31,7 @@
             label1 = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel3 = new TableLayoutPanel();
-            label2 = new Label();
+            subjectLabel = new Label();
             pupilName = new TextBox();
             tableLayoutPanel2 = new TableLayoutPanel();
             recordedOn = new TextBox();
@@ -83,7 +83,7 @@
             tableLayoutPanel3.ColumnCount = 2;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.8614607F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 85.13854F));
-            tableLayoutPanel3.Controls.Add(label2, 0, 0);
+            tableLayoutPanel3.Controls.Add(subjectLabel, 0, 0);
             tableLayoutPanel3.Controls.Add(pupilName, 1, 0);
             tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(3, 49);
@@ -94,22 +94,22 @@
             tableLayoutPanel3.Size = new Size(908, 37);
             tableLayoutPanel3.TabIndex = 1;
             // 
-            // label2
+            // subjectLabel
             // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Location = new Point(25, 8);
-            label2.Name = "label2";
-            label2.Size = new Size(83, 20);
-            label2.TabIndex = 0;
-            label2.Text = "Pupil name";
+            subjectLabel.Anchor = AnchorStyles.None;
+            subjectLabel.AutoSize = true;
+            subjectLabel.Location = new Point(29, 8);
+            subjectLabel.Name = "subjectLabel";
+            subjectLabel.Size = new Size(76, 20);
+            subjectLabel.TabIndex = 0;
+            subjectLabel.Text = "{SUBJECT}";
             // 
             // pupilName
             // 
             pupilName.BackColor = Color.White;
             pupilName.BorderStyle = BorderStyle.None;
             pupilName.Dock = DockStyle.Fill;
-            pupilName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            pupilName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             pupilName.Location = new Point(137, 4);
             pupilName.Margin = new Padding(3, 4, 3, 4);
             pupilName.Name = "pupilName";
@@ -142,7 +142,7 @@
             recordedOn.BackColor = Color.White;
             recordedOn.BorderStyle = BorderStyle.None;
             recordedOn.Dock = DockStyle.Fill;
-            recordedOn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            recordedOn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             recordedOn.Location = new Point(138, 4);
             recordedOn.Margin = new Padding(3, 4, 3, 4);
             recordedOn.Name = "recordedOn";
@@ -165,7 +165,7 @@
             teacher.BackColor = Color.White;
             teacher.BorderStyle = BorderStyle.None;
             teacher.Dock = DockStyle.Fill;
-            teacher.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            teacher.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             teacher.Location = new Point(540, 4);
             teacher.Margin = new Padding(3, 4, 3, 4);
             teacher.Name = "teacher";
@@ -178,7 +178,7 @@
             informationBox.BackColor = Color.White;
             informationBox.BorderStyle = BorderStyle.None;
             informationBox.Dock = DockStyle.Fill;
-            informationBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            informationBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             informationBox.Location = new Point(3, 94);
             informationBox.Margin = new Padding(3, 4, 3, 4);
             informationBox.Name = "informationBox";
@@ -248,7 +248,7 @@
         private Label label1;
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel3;
-        private Label label2;
+        private Label subjectLabel;
         private TextBox pupilName;
         private TableLayoutPanel tableLayoutPanel2;
         private TextBox recordedOn;

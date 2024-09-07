@@ -35,13 +35,14 @@
             button1 = new Button();
             panel1 = new Panel();
             tableLayoutPanel3 = new TableLayoutPanel();
+            label5 = new Label();
             richTextBox3 = new RichTextBox();
             tableLayoutPanel4 = new TableLayoutPanel();
-            label1 = new Label();
+            subjectLabel = new Label();
             pupilName = new TextBox();
             tableLayoutPanel7 = new TableLayoutPanel();
             teacherName = new TextBox();
-            label4 = new Label();
+            reporterLabel = new Label();
             panel2 = new Panel();
             btnSave = new Button();
             btnClose = new Button();
@@ -59,7 +60,6 @@
             label2 = new Label();
             tableLayoutPanel6 = new TableLayoutPanel();
             label3 = new Label();
-            label5 = new Label();
             panel1.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
@@ -156,12 +156,23 @@
             tableLayoutPanel3.Size = new Size(892, 574);
             tableLayoutPanel3.TabIndex = 0;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Dock = DockStyle.Fill;
+            label5.Location = new Point(3, 545);
+            label5.Name = "label5";
+            label5.Size = new Size(886, 20);
+            label5.TabIndex = 6;
+            label5.Text = "Staff Recording System © J Balfour and G Fraser";
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // richTextBox3
             // 
             richTextBox3.AcceptsTab = true;
             richTextBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             richTextBox3.BorderStyle = BorderStyle.None;
-            richTextBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            richTextBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             richTextBox3.Location = new Point(3, 97);
             richTextBox3.Margin = new Padding(3, 4, 3, 4);
             richTextBox3.Name = "richTextBox3";
@@ -175,7 +186,7 @@
             tableLayoutPanel4.ColumnCount = 2;
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 114F));
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 99.99999F));
-            tableLayoutPanel4.Controls.Add(label1, 0, 0);
+            tableLayoutPanel4.Controls.Add(subjectLabel, 0, 0);
             tableLayoutPanel4.Controls.Add(pupilName, 1, 0);
             tableLayoutPanel4.Dock = DockStyle.Fill;
             tableLayoutPanel4.Location = new Point(3, 12);
@@ -186,22 +197,22 @@
             tableLayoutPanel4.Size = new Size(886, 40);
             tableLayoutPanel4.TabIndex = 0;
             // 
-            // label1
+            // subjectLabel
             // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Location = new Point(14, 10);
-            label1.Name = "label1";
-            label1.Size = new Size(86, 20);
-            label1.TabIndex = 5;
-            label1.Text = "Pupil Name";
+            subjectLabel.Anchor = AnchorStyles.None;
+            subjectLabel.AutoSize = true;
+            subjectLabel.Location = new Point(29, 10);
+            subjectLabel.Name = "subjectLabel";
+            subjectLabel.Size = new Size(56, 20);
+            subjectLabel.TabIndex = 5;
+            subjectLabel.Text = "{PUPIL}";
             // 
             // pupilName
             // 
             pupilName.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             pupilName.BackColor = Color.White;
             pupilName.BorderStyle = BorderStyle.None;
-            pupilName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            pupilName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             pupilName.Location = new Point(117, 6);
             pupilName.Margin = new Padding(3, 4, 3, 4);
             pupilName.Name = "pupilName";
@@ -215,7 +226,7 @@
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 114F));
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel7.Controls.Add(teacherName, 0, 0);
-            tableLayoutPanel7.Controls.Add(label4, 0, 0);
+            tableLayoutPanel7.Controls.Add(reporterLabel, 0, 0);
             tableLayoutPanel7.Dock = DockStyle.Fill;
             tableLayoutPanel7.Location = new Point(3, 454);
             tableLayoutPanel7.Margin = new Padding(3, 4, 3, 4);
@@ -230,22 +241,22 @@
             teacherName.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             teacherName.BackColor = Color.White;
             teacherName.BorderStyle = BorderStyle.None;
-            teacherName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            teacherName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             teacherName.Location = new Point(117, 4);
             teacherName.Margin = new Padding(3, 4, 3, 4);
             teacherName.Name = "teacherName";
             teacherName.Size = new Size(766, 27);
             teacherName.TabIndex = 7;
             // 
-            // label4
+            // reporterLabel
             // 
-            label4.Anchor = AnchorStyles.None;
-            label4.AutoSize = true;
-            label4.Location = new Point(5, 8);
-            label4.Name = "label4";
-            label4.Size = new Size(104, 20);
-            label4.TabIndex = 6;
-            label4.Text = "Teacher Name";
+            reporterLabel.Anchor = AnchorStyles.None;
+            reporterLabel.AutoSize = true;
+            reporterLabel.Location = new Point(13, 8);
+            reporterLabel.Name = "reporterLabel";
+            reporterLabel.Size = new Size(88, 20);
+            reporterLabel.TabIndex = 6;
+            reporterLabel.Text = "{REPORTER}";
             // 
             // panel2
             // 
@@ -421,17 +432,6 @@
             label3.TabIndex = 5;
             label3.Text = "Pupil Name";
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Dock = DockStyle.Fill;
-            label5.Location = new Point(3, 545);
-            label5.Name = "label5";
-            label5.Size = new Size(886, 20);
-            label5.TabIndex = 6;
-            label5.Text = "Staff Recording System © J Balfour and G Fraser";
-            label5.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // RecordSomething
             // 
             AcceptButton = btnSave;
@@ -471,11 +471,11 @@
         private TableLayoutPanel tableLayoutPanel3;
         private RichTextBox richTextBox3;
         private TableLayoutPanel tableLayoutPanel4;
-        private Label label1;
+        private Label subjectLabel;
         private TextBox pupilName;
         private TableLayoutPanel tableLayoutPanel7;
         private TextBox teacherName;
-        private Label label4;
+        private Label reporterLabel;
         private TableLayoutPanel tableLayoutPanel5;
         private Label label2;
         private TableLayoutPanel tableLayoutPanel6;

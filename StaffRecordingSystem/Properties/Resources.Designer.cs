@@ -59,5 +59,41 @@ namespace StaffRecordingSystem.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Staff Recording System.
+        /// </summary>
+        internal static string applicationName {
+            get {
+                return ResourceManager.GetString("applicationName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\Users\jamie\output.
+        /// </summary>
+        internal static string mainPath {
+            get {
+                return ResourceManager.GetString("mainPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Teacher.
+        /// </summary>
+        internal static string reporterString {
+            get {
+                return ResourceManager.GetString("reporterString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pupil.
+        /// </summary>
+        internal static string subjectString {
+            get {
+                return ResourceManager.GetString("subjectString", resourceCulture);
+            }
+        }
     }
 }

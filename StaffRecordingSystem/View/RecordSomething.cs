@@ -16,7 +16,9 @@ namespace StaffRecordingSystem
 
         private void RecordSomething_Load(object sender, EventArgs e)
         {
-
+            this.Text = Properties.Resources.applicationName + " :: Recording System";
+            subjectLabel.Text = Properties.Resources.subjectString;
+            reporterLabel.Text = Properties.Resources.reporterString;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

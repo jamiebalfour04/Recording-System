@@ -99,7 +99,7 @@
             usernameInput.BackColor = Color.FromArgb(241, 241, 241);
             usernameInput.BorderStyle = BorderStyle.None;
             usernameInput.Dock = DockStyle.Fill;
-            usernameInput.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            usernameInput.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             usernameInput.Location = new Point(26, 58);
             usernameInput.Margin = new Padding(3, 4, 3, 4);
             usernameInput.Name = "usernameInput";
@@ -111,7 +111,7 @@
             passwordInput.BackColor = Color.FromArgb(241, 241, 241);
             passwordInput.BorderStyle = BorderStyle.None;
             passwordInput.Dock = DockStyle.Fill;
-            passwordInput.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            passwordInput.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             passwordInput.Location = new Point(26, 139);
             passwordInput.Margin = new Padding(3, 4, 3, 4);
             passwordInput.Name = "passwordInput";
@@ -146,6 +146,7 @@
             Name = "PasswordForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Staff Recording System :: Login";
+            Load += PasswordForm_Load;
             panel1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
